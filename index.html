@@ -1,3 +1,29 @@
-<div id="app"></div>
-<img url="https://ibb.co/Vq7zyL4" alt="vreni">
-<div id="bg"></div>
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title> Background Change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="imgcolor">
+        <img src="vreni.jpg" alt="img">
+        <div id="bg"></div>
+    </div>
+<h1>Please make a Click and look what happen!</h1>
+
+    <script type="text/javascript">
+        const bg = document.getElementById('bg');
+        function randomColor() {
+            return Math.floor(Math.random() * 255);
+        }
+        bg.addEventListener('click', () => {
+            bg.style.backgroundColor =
+                'rgba(' + randomColor() + ',' + randomColor() + ',' + randomColor() + ')';
+        })
+    </script>
+
+    </body>
+
+</html>
+
